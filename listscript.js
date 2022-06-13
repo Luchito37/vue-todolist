@@ -36,6 +36,9 @@ new Vue ({
                 text: nuovoCompito,
                 done: false,
             })
+        },
+        eliminaCompito(indiceDaTogliere){
+            this.listaSpesa.splice(indiceDaTogliere, 1);
         }
     }
 });
