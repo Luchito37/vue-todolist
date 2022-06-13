@@ -28,4 +28,14 @@ new Vue ({
             },
         ],
     },
+    methods: {
+        aggCompiti: function(){
+            const nuovoCompito = prompt ("Inserisci un nuovo compito da svolgere");
+
+            this.listaSpesa.push({
+                text: nuovoCompito,
+                done: false,
+            })
+        }
+    }
 });
