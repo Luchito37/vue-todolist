@@ -28,7 +28,7 @@
                                 <div class="text-center">
                                     <ul class="list-unstyled d-inline-block">
                                         <li class=" text-start d-flex align-items-center py-4" v-for="(compiti, i) in listaSpesa">
-                                            <div class="form-check form-switch me-auto pe-3">
+                                            <div class="form-check form-switch me-auto">
                                                 <input class="form-check-input" type="checkbox" role="switch" :id="'compitiSvolti' + i" v-model="compiti.done">
     
                                                 <label class="form-check-label" :class="{'text-decoration-line-through': compiti.done, 'text-secondary': compiti.done, }" :for="'compitiSvolti' + i">{{ compiti.text }}</label>
